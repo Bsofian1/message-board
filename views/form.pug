@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= "Enter a new message"
+    form(action='/new', method='POST')
+        p Your name
+        input(type="text" name="name" placeholder="Enter your name ")
+        p Your message
+        input(type="text" name="message" placeholder="Enter your message ")
+        input(value='Submit', type='submit')
